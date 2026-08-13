@@ -1,17 +1,21 @@
 <div align="center">
-    <img src="img/portada.jpg" alt="Portada del Semillero" width="90%">
+    <img src="https://raw.githubusercontent.com/danielab-cyber/Semillero-Tesla/main/SEMILLERO%20TESLA.png"
+         alt="Semillero Tesla"
+         width="100%">
 </div>
-
 <br>
-
-<h2>📚 Investigación</h2>
+<br>
+<br>
+<td colspan="3">
+    <h2 align="center"></h2>
+</td>
 
 <table>
 <tr>
 <td align="center" colspan="3">
 
 <a href="PEGA_AQUI_EL_LINK_DEL_EXCEL">
-<img src="https://img.icons8.com/fluency/96/microsoft-excel-2019.png" width="55">
+<img src="https://img.icons8.com/ios-filled/96/7B4AB8/database.png" width="55">
 </a>
 
 <br>
@@ -21,7 +25,7 @@
 </td>
 </tr>
 <details>
-<summary>📖 How to use this section / Cómo usar esta sección</summary>
+<summary> Cómo usar esta sección / How to use this section </summary>
 
 <br>
 
@@ -56,7 +60,7 @@
 <td align="center" width="33%">
 
 <a href="./01_Estado_del_Arte">
-<img src="https://img.icons8.com/fluency/96/opened-folder.png" width="55">
+<img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
 <br>
@@ -68,7 +72,7 @@
 <td align="center" width="33%">
 
 <a href="./02_Arquitectura_y_Diseno">
-<img src="https://img.icons8.com/fluency/96/opened-folder.png" width="55">
+<img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
 <br>
@@ -80,7 +84,7 @@
 <td align="center" width="33%">
 
 <a href="./03_Electronica_y_Hardware">
-<img src="https://img.icons8.com/fluency/96/opened-folder.png" width="55">
+<img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
 <br>
@@ -96,7 +100,7 @@
 <td align="center">
 
 <a href="./04_Percepcion_y_Sensado">
-<img src="https://img.icons8.com/fluency/96/opened-folder.png" width="55">
+<img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
 <br>
@@ -108,7 +112,7 @@
 <td align="center">
 
 <a href="./05_Movilidad_y_Locomocion">
-<img src="https://img.icons8.com/fluency/96/opened-folder.png" width="55">
+<img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
 <br>
@@ -120,7 +124,7 @@
 <td align="center">
 
 <a href="./06_Mecanismos_y_Actuacion">
-<img src="https://img.icons8.com/fluency/96/opened-folder.png" width="55">
+<img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
 <br>
@@ -136,7 +140,7 @@
 <td align="center">
 
 <a href="./07_Control_y_Automatizacion">
-<img src="https://img.icons8.com/fluency/96/opened-folder.png" width="55">
+<img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
 <br>
@@ -148,7 +152,7 @@
 <td align="center">
 
 <a href="./08_Interaccion_Humano_Robot">
-<img src="https://img.icons8.com/fluency/96/opened-folder.png" width="55">
+<img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
 <br>
@@ -160,7 +164,7 @@
 <td align="center">
 
 <a href="./09_Aplicaciones_Asistenciales">
-<img src="https://img.icons8.com/fluency/96/opened-folder.png" width="55">
+<img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
 <br>
@@ -176,7 +180,7 @@
 <td align="center" colspan="3">
 
 <a href="./10_Referencias_Complementarias">
-<img src="https://img.icons8.com/fluency/96/opened-folder.png" width="55">
+<img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
 <br>
@@ -188,3 +192,461 @@
 </tr>
 
 </table>
+
+<br>
+<hr>
+<br>
+
+<div align="center">
+
+<h2>Diseño del Sistema</h2>
+
+<sub>
+Presentación del diseño actual del robot y de las principales decisiones
+que orientan su desarrollo.
+</sub>
+
+</div>
+
+<br>
+<br>
+
+<table>
+
+<tr>
+
+<td colspan="2" align="center">
+
+<h2>01 · Concepto General</h2>
+
+<br>
+
+<img src="PEGA_AQUI_LA_IMAGEN_PRINCIPAL.png" width="80%">
+
+<br><br>
+
+<h3>Concepto del robot</h3>
+
+<p>
+Escribe aquí una breve descripción del concepto general del robot,
+su propósito y las necesidades que busca resolver.
+</p>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+<br>
+
+<table>
+
+<tr>
+
+<td colspan="2" align="center">
+
+<h2>02 · Arquitectura del Robot</h2>
+
+<br>
+
+<img src="PEGA_AQUI_EL_DIAGRAMA.png" width="80%">
+
+<br><br>
+
+<p>
+Explica aquí cómo se divide el robot en sus principales sistemas:
+cabeza, torso, brazos, mecanismos, base móvil, electrónica, etc.
+</p>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+<br>
+
+<table>
+
+<tr>
+
+<td colspan="2" align="center">
+
+<h2>03 · Dimensionamiento y Estructura</h2>
+
+<br>
+
+<table>
+
+<tr>
+
+<td align="center" width="50%">
+
+<img src="PEGA_AQUI_VISTA_FRONTAL.png" width="90%">
+
+<br>
+
+<b>Vista frontal</b>
+
+</td>
+
+<td align="center" width="50%">
+
+<img src="PEGA_AQUI_VISTA_LATERAL.png" width="90%">
+
+<br>
+
+<b>Vista lateral</b>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+
+<p>
+Incluye aquí las dimensiones principales del robot,
+proporciones, restricciones de espacio y criterios utilizados
+para definir su estructura.
+</p>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+<br>
+
+<table>
+
+<tr>
+
+<td colspan="2" align="center">
+
+<h2>04 · Torso y Reconfiguración</h2>
+
+<br>
+
+<img src="PEGA_AQUI_EL_TORSO.png" width="75%">
+
+<br><br>
+
+<h3>Configuración del torso</h3>
+
+<p>
+Explica aquí cómo se plantea el torso, qué partes pueden
+reconfigurarse y qué función cumple cada configuración.
+</p>
+
+<br>
+
+<table>
+
+<tr>
+
+<td align="center" width="50%">
+
+<img src="PEGA_AQUI_CONFIGURACION_1.png" width="90%">
+
+<br>
+
+<b>Configuración 01</b>
+
+</td>
+
+<td align="center" width="50%">
+
+<img src="PEGA_AQUI_CONFIGURACION_2.png" width="90%">
+
+<br>
+
+<b>Configuración 02</b>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+<br>
+
+<table>
+
+<tr>
+
+<td colspan="2" align="center">
+
+<h2>05 · Brazos y Mecanismos</h2>
+
+<br>
+
+<img src="PEGA_AQUI_BRAZOS.png" width="75%">
+
+<br><br>
+
+<p>
+Describe aquí los grados de libertad, articulaciones,
+actuadores, mecanismos y alcance previsto para los brazos.
+</p>
+
+<br>
+
+<table>
+
+<tr>
+
+<td align="center" width="50%">
+
+<h3>Articulaciones</h3>
+
+<img src="PEGA_AQUI_ARTICULACIONES.png" width="90%">
+
+</td>
+
+<td align="center" width="50%">
+
+<h3>Mecanismos</h3>
+
+<img src="PEGA_AQUI_MECANISMOS.png" width="90%">
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+<br>
+
+<table>
+
+<tr>
+
+<td colspan="2" align="center">
+
+<h2>06 · Movilidad</h2>
+
+<br>
+
+<img src="PEGA_AQUI_BASE_MOVIL.png" width="75%">
+
+<br><br>
+
+<h3>Sistema de locomoción</h3>
+
+<p>
+Explica aquí el tipo de movilidad seleccionado,
+la configuración de las ruedas y las razones de su elección.
+</p>
+
+<br>
+
+<table>
+
+<tr>
+
+<td align="center" width="33%">
+
+<b>Configuración</b>
+
+<br>
+
+<sub>
+Describe la configuración seleccionada.
+</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+<b>Movimiento</b>
+
+<br>
+
+<sub>
+Describe los movimientos posibles.
+</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+<b>Justificación</b>
+
+<br>
+
+<sub>
+Explica por qué se seleccionó.
+</sub>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+<br>
+
+<table>
+
+<tr>
+
+<td colspan="2" align="center">
+
+<h2>07 · Percepción e Interacción</h2>
+
+<br>
+
+<img src="PEGA_AQUI_SENSORES_O_CABEZA.png" width="75%">
+
+<br><br>
+
+<p>
+Describe aquí cómo el robot percibirá su entorno,
+qué sensores utilizará y cómo se plantea la interacción
+con el usuario.
+</p>
+
+<br>
+
+<table>
+
+<tr>
+
+<td align="center" width="50%">
+
+<h3>Percepción</h3>
+
+<img src="PEGA_AQUI_SENSORES.png" width="90%">
+
+<br>
+
+<sub>
+Sensores y sistemas de percepción.
+</sub>
+
+</td>
+
+<td align="center" width="50%">
+
+<h3>Interacción</h3>
+
+<img src="PEGA_AQUI_INTERACCION.png" width="90%">
+
+<br>
+
+<sub>
+Elementos destinados a la interacción con el usuario.
+</sub>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+<br>
+
+<table>
+
+<tr>
+
+<td colspan="2" align="center">
+
+<h2>08 · Estado Actual del Diseño</h2>
+
+<br>
+
+<img src="PEGA_AQUI_EL_RENDER_ACTUAL.png" width="80%">
+
+<br><br>
+
+<table>
+
+<tr>
+
+<td align="center" width="33%">
+
+<h3>✓ Definido</h3>
+
+<sub>
+Elementos cuyo diseño ya fue establecido.
+</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+<h3>◐ En desarrollo</h3>
+
+<sub>
+Elementos actualmente en proceso de diseño.
+</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+<h3>○ Pendiente</h3>
+
+<sub>
+Elementos que aún requieren definición.
+</sub>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+
+<p>
+Actualiza esta sección conforme avance el desarrollo del proyecto.
+</p>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+<br>
+<hr>
+
+
