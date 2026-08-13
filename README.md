@@ -1,5 +1,8 @@
-# Semillero-Tesla
-Desarrollo de soluciones robóticas enfocadas en asistencia, interacción humana y aplicaciones clínicas.
+<div align="center">
+    <img src="img/portada.jpg" alt="Portada del Semillero" width="90%">
+</div>
+
+<br>
 
 <h2>📚 Investigación</h2>
 
