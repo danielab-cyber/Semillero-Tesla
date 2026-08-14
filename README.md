@@ -82,7 +82,7 @@
 
 <td align="center" width="33%">
 
-<a href="./03_Electronica_y_Hardware">
+<a href="./FOLDER3">
 <img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
@@ -98,7 +98,7 @@
 
 <td align="center">
 
-<a href="./04_Percepcion_y_Sensado">
+<a href="./FOLDER4">
 <img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
@@ -110,7 +110,7 @@
 
 <td align="center">
 
-<a href="./05_Movilidad_y_Locomocion">
+<a href="./FOLDER5">
 <img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
@@ -122,7 +122,7 @@
 
 <td align="center">
 
-<a href="./06_Mecanismos_y_Actuacion">
+<a href="./FOLDER6">
 <img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
@@ -138,7 +138,7 @@
 
 <td align="center">
 
-<a href="./07_Control_y_Automatizacion">
+<a href="./FOLDER7">
 <img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
@@ -150,7 +150,7 @@
 
 <td align="center">
 
-<a href="./08_Interaccion_Humano_Robot">
+<a href="./FOLDER8">
 <img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
@@ -162,7 +162,7 @@
 
 <td align="center">
 
-<a href="./09_Aplicaciones_Asistenciales">
+<a href="./FOLDER9">
 <img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
@@ -178,7 +178,7 @@
 
 <td align="center" colspan="3">
 
-<a href="./10_Referencias_Complementarias">
+<a href="./FOLDER10">
 <img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
