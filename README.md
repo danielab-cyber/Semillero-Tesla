@@ -59,15 +59,14 @@
 
 <td align="center" width="33%">
 
-<a href="./01_Estado_del_Arte">
+<a href="./FOLDER1">
 <img src="https://img.icons8.com/ios-filled/96/794937/opened-folder.png" width="55">
 </a>
 
 <br>
 <b>Estado del Arte</b>
 <br>
-<sub>Antecedentes, referentes y desarrollos relacionados con el proyecto.</sub>
-</td>
+<sub>Antecedentes relacionados con el proyecto.</sub>
 
 <td align="center" width="33%">
 
