@@ -200,6 +200,9 @@
 
 
 
+
+
+
 <div align="center">
 
 <h2>Diseño del Sistema</h2>
@@ -224,18 +227,33 @@ que orientan su desarrollo.
 
 <br>
 
-<img src="https://raw.githubusercontent.com/danielab-cyber/Semillero-Tesla/main/image.png" width="80%">
+<img src="https://raw.githubusercontent.com/danielab-cyber/Semillero-Tesla/main/image.png" width="75%">
 
 <br><br>
 
 <h3>Concepto del robot</h3>
 
 <p>
-El proyecto corresponde al diseño de un robot móvil asistencial orientado
-a la interacción y al apoyo en un contexto clínico. El diseño busca integrar
-diferentes sistemas de percepción, interacción y medición en una plataforma
-móvil, manteniendo una arquitectura que pueda continuar adaptándose a medida
-que se definan los sistemas que harán parte de la versión final.
+El proyecto corresponde al diseño de un robot móvil asistencial con torso
+reconfigurable para interacción clínica. La propuesta busca integrar en una
+misma plataforma sistemas de asistencia clínica, percepción, navegación,
+interacción humano-robot y atención ante situaciones de emergencia.
+</p>
+
+<p>
+El diseño parte de la necesidad de que el robot pueda adaptarse físicamente
+a diferentes usuarios y situaciones de atención. Por esta razón, uno de los
+elementos principales del proyecto es la regulación de altura del torso,
+permitiendo modificar la posición de la parte superior del robot sin
+necesidad de modificar toda la plataforma.
+</p>
+
+<p>
+La investigación realizada permitió organizar los requerimientos en seis
+grandes áreas: módulo clínico, inteligencia artificial, navegación, brazos,
+sensores y emergencia. Esta organización permite desarrollar el robot por
+sistemas independientes y facilita la incorporación progresiva de nuevas
+funciones.
 </p>
 
 </td>
@@ -257,17 +275,67 @@ que se definan los sistemas que harán parte de la versión final.
 
 <br>
 
-<img src="https://raw.githubusercontent.com/danielab-cyber/Semillero-Tesla/main/image.png" width="80%">
+<h3>Distribución general</h3>
+
+<p>
+La arquitectura propuesta se divide en varios sistemas que trabajan sobre
+una misma plataforma móvil. La estructura contempla una cabeza, un torso,
+brazos, un mecanismo de elevación, una base móvil y diferentes sistemas
+electrónicos y de percepción.
+</p>
+
+<table>
+
+<tr>
+
+<td align="center" width="33%">
+
+<b>Estructura</b>
 
 <br><br>
 
+<sub>
+Cabeza, torso, mecanismo de elevación y base móvil.
+</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+<b>Sistemas</b>
+
+<br><br>
+
+<sub>
+Módulo clínico, IA, navegación, sensores y emergencia.
+</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+<b>Interacción</b>
+
+<br><br>
+
+<sub>
+Pantalla, comunicación, proximidad al paciente y futuros sistemas de
+interacción.
+</sub>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+
 <p>
-La arquitectura actual se compone de una base móvil, un sistema de elevación
-del torso, un torso destinado a integrar los sistemas de interacción y
-medición, una cabeza con interfaz superior y espacios destinados a futuros
-sistemas. La configuración de los brazos aún se encuentra en definición,
-debido a que su diseño dependerá de las funciones y sistemas que finalmente
-se integren al robot.
+El concepto de diseño modular permite modificar o desarrollar cada sistema
+sin tener que rediseñar completamente el robot. Esta estrategia también
+permite que los brazos y sus elementos terminales sean definidos después de
+establecer con mayor precisión las tareas que deberá realizar el robot.
 </p>
 
 </td>
@@ -285,46 +353,77 @@ se integren al robot.
 
 <td colspan="2" align="center">
 
-<h2>03 · Dimensionamiento y Estructura</h2>
+<h2>03 · Especificaciones de Diseño</h2>
 
 <br>
+
+<h3>Requisitos establecidos</h3>
 
 <table>
 
 <tr>
+<td align="center"><b>Característica</b></td>
+<td align="center"><b>Especificación</b></td>
+</tr>
 
-<td align="center" width="50%">
+<tr>
+<td>Altura regulable</td>
+<td>116 cm a 170 cm</td>
+</tr>
 
-<img src="PEGA_AQUI_VISTA_FRONTAL.png" width="90%">
+<tr>
+<td>Peso objetivo</td>
+<td>50 kg</td>
+</tr>
 
-<br>
+<tr>
+<td>Tiempo de operación</td>
+<td>Mínimo 8 horas</td>
+</tr>
 
-<b>Vista frontal</b>
+<tr>
+<td>Velocidad objetivo</td>
+<td>1 m/s planteado como referencia</td>
+</tr>
 
-</td>
+<tr>
+<td>Radio de giro</td>
+<td>360° mediante base con ruedas omnidireccionales</td>
+</tr>
 
-<td align="center" width="50%">
+<tr>
+<td>Regulación de altura</td>
+<td>Adaptación para diferentes usuarios, desde niños hasta adultos</td>
+</tr>
 
-<img src="PEGA_AQUI_VISTA_LATERAL.png" width="90%">
+<tr>
+<td>Diseño</td>
+<td>Amigable y orientado a la interacción con el usuario</td>
+</tr>
 
-<br>
+<tr>
+<td>Resistencia</td>
+<td>Resistencia a líquidos</td>
+</tr>
 
-<b>Vista lateral</b>
-
-</td>
-
+<tr>
+<td>Seguridad</td>
+<td>Estabilidad durante la operación y movimientos suaves</td>
 </tr>
 
 </table>
 
 <br>
 
+<h3>Parámetros pendientes de definición</h3>
+
 <p>
-El diseño estructural se encuentra en proceso de definición y ajuste. La
-geometría actual contempla una base móvil, un cuerpo central y un mecanismo
-que permite modificar verticalmente la altura del torso. Las dimensiones
-definitivas se establecerán conforme avance el diseño mecánico y se definan
-los sistemas que serán incorporados.
+Algunos parámetros fueron identificados durante la investigación pero todavía
+no cuentan con un valor definitivo. Entre ellos se encuentran la carga útil
+exacta para levantamiento de objetos, la inclinación máxima del torso, el
+alcance definitivo de los brazos y la posición final del centro de gravedad.
+Estos valores serán determinados durante las etapas de modelado geométrico,
+cinemática, análisis de estabilidad, selección de motores y validación.
 </p>
 
 </td>
@@ -346,27 +445,29 @@ los sistemas que serán incorporados.
 
 <br>
 
-<img src="https://raw.githubusercontent.com/danielab-cyber/Semillero-Tesla/main/image.png" width="75%">
-
-<br><br>
-
-<h3>Configuración del torso</h3>
+<h3>Mecanismo de elevación</h3>
 
 <p>
-El torso incorpora actualmente un mecanismo de desplazamiento vertical que
-permite subir y bajar la estructura superior del robot. Esta modificación
-reemplaza la propuesta anterior de movimiento en tres ejes y simplifica la
-configuración actual a un único movimiento de elevación vertical.
+El diseño inicial contemplaba diferentes movimientos del torso. Sin embargo,
+a partir del análisis de requerimientos y de la búsqueda de una solución más
+estable y funcional para la interacción clínica, la configuración actual se
+simplificó a un mecanismo principal de elevación vertical.
 </p>
 
 <p>
-Además, el torso cuenta con una abertura frontal destinada a permitir la
-implementación de un sistema para la medición de la presión arterial. La
-distribución de estos elementos busca facilitar el acceso del usuario a los
-sistemas de medición sin comprometer la estructura general del robot.
+El torso puede subir y bajar para modificar la altura de interacción con el
+paciente. La investigación de estaturas permitió establecer un rango de
+referencia entre 116 cm y 170 cm, considerando usuarios desde aproximadamente
+los 6 años hasta adultos.
 </p>
 
-<br>
+<p>
+La elección de este mecanismo también responde a la necesidad de acercar el
+robot al paciente sin depender únicamente del desplazamiento de toda la base.
+En escenarios donde el paciente se encuentra cerca, el sistema puede utilizar
+el movimiento del torso para ajustar la posición de los elementos de
+interacción.
+</p>
 
 <table>
 
@@ -374,22 +475,24 @@ sistemas de medición sin comprometer la estructura general del robot.
 
 <td align="center" width="50%">
 
-<h3>Elevación vertical</h3>
+<b>Movimiento principal</b>
+
+<br><br>
 
 <sub>
-Sistema que permite modificar la altura del torso mediante un movimiento de
-subida y bajada.
+Elevación y descenso vertical del torso.
 </sub>
 
 </td>
 
 <td align="center" width="50%">
 
-<h3>Zona de medición</h3>
+<b>Objetivo</b>
+
+<br><br>
 
 <sub>
-Abertura destinada a la integración del sistema de medición de presión
-arterial.
+Adaptar la altura del robot al usuario y facilitar la interacción clínica.
 </sub>
 
 </td>
@@ -397,6 +500,15 @@ arterial.
 </tr>
 
 </table>
+
+<br>
+
+<p>
+El diseño también considera que una mayor concentración de masa en la zona
+inferior puede favorecer la estabilidad del robot durante el movimiento del
+torso. Por esta razón, baterías, motores y otros elementos de mayor masa se
+consideran preferentemente en la base.
+</p>
 
 </td>
 
@@ -417,43 +529,39 @@ arterial.
 
 <br>
 
-<p>
-El diseño de los brazos todavía no se encuentra completamente definido. La
-configuración final dependerá de los sistemas y funciones que se incorporen
-al robot. Por esta razón, aún no se han establecido de manera definitiva los
-grados de libertad, articulaciones, actuadores ni la necesidad de incorporar
-manos u otros mecanismos terminales.
-</p>
-
-<br>
-
-<table>
-
-<tr>
-
-<td align="center" width="50%">
-
 <h3>Estado actual</h3>
 
-<sub>
-Sistema mecánico pendiente de definición.
-</sub>
+<p>
+Los brazos se encuentran todavía en etapa de definición. La investigación
+estableció como posibles funciones la manipulación de objetos pequeños,
+levantamiento de objetos, entrega de medicamentos, transporte de dispositivos
+y realización de tareas específicas de asistencia, como aplicar presión sobre
+una herida.
+</p>
 
-</td>
+<p>
+Sin embargo, todavía no se han definido todos los sistemas que deberá
+incorporar el robot. Por esta razón, no se establece todavía una cantidad
+definitiva de grados de libertad, actuadores ni elementos terminales. La
+necesidad de incorporar manos u otro tipo de herramienta dependerá de las
+funciones que finalmente sean seleccionadas.
+</p>
 
-<td align="center" width="50%">
+<h3>Referencia mecánica</h3>
 
-<h3>Definición futura</h3>
+<p>
+Durante la investigación se estudiaron diferentes tipos de articulaciones
+robóticas: revolutas, prismáticas, cilíndricas, esféricas y planas. Las
+articulaciones esféricas fueron consideradas especialmente apropiadas para
+ciertos movimientos por su capacidad de proporcionar varios grados de libertad
+angular.
+</p>
 
-<sub>
-La configuración dependerá de las funciones que requiera el robot.
-</sub>
-
-</td>
-
-</tr>
-
-</table>
+<p>
+La selección definitiva de las articulaciones se realizará posteriormente,
+una vez se establezcan las tareas concretas de los brazos y se puedan evaluar
+fuerzas, torques, alcance, estabilidad y consumo energético.
+</p>
 
 </td>
 
@@ -474,21 +582,21 @@ La configuración dependerá de las funciones que requiera el robot.
 
 <br>
 
-<img src="https://raw.githubusercontent.com/danielab-cyber/Semillero-Tesla/main/image.png" width="75%">
-
-<br><br>
-
 <h3>Sistema de locomoción</h3>
 
 <p>
-La parte inferior del robot está conformada por una base móvil destinada a
-proporcionar desplazamiento al sistema completo. La configuración de
-movilidad continúa formando parte del desarrollo mecánico del proyecto y
-será ajustada de acuerdo con los requerimientos de estabilidad, espacio y
-maniobrabilidad.
+La movilidad se plantea mediante una base omnidireccional que permita al robot
+desplazarse y girar en espacios reducidos. El requerimiento establecido
+contempla un radio de giro de 360°, buscando que la plataforma pueda
+orientarse respecto al paciente sin necesidad de realizar maniobras amplias.
 </p>
 
-<br>
+<p>
+La base también tiene una función importante en la estabilidad general del
+sistema. Debido a que el torso puede modificar su altura, la distribución de
+masas y la posición del centro de gravedad serán factores fundamentales para
+evitar vuelcos durante el movimiento.
+</p>
 
 <table>
 
@@ -496,36 +604,36 @@ maniobrabilidad.
 
 <td align="center" width="33%">
 
-<b>Configuración</b>
+<b>Movilidad</b>
 
-<br>
+<br><br>
 
 <sub>
-Base móvil integrada en la parte inferior del robot.
+Base móvil con configuración omnidireccional.
 </sub>
 
 </td>
 
 <td align="center" width="33%">
 
-<b>Movimiento</b>
+<b>Objetivo</b>
 
-<br>
+<br><br>
 
 <sub>
-Desplazamiento del robot mediante su sistema de movilidad.
+Facilitar el posicionamiento y la orientación frente al paciente.
 </sub>
 
 </td>
 
 <td align="center" width="33%">
 
-<b>Desarrollo</b>
+<b>Seguridad</b>
 
-<br>
+<br><br>
 
 <sub>
-La configuración definitiva continúa en evaluación.
+Mantener la estabilidad durante el desplazamiento y la elevación del torso.
 </sub>
 
 </td>
@@ -553,27 +661,14 @@ La configuración definitiva continúa en evaluación.
 
 <br>
 
-<img src="https://raw.githubusercontent.com/danielab-cyber/Semillero-Tesla/main/image.png" width="75%">
-
-<br><br>
+<h3>Sistemas de sensores considerados</h3>
 
 <p>
-El diseño actual incorpora diferentes puntos destinados a la percepción y a
-la interacción con el usuario. Se plantea la utilización de sensores de
-proximidad distribuidos en las esquinas del robot para detectar el
-acercamiento de personas. También se contempla un sensor de temperatura
-ubicado en la zona del pecho.
+Los requerimientos del proyecto contemplan diferentes niveles de percepción,
+desde la medición de variables fisiológicas hasta la detección del entorno.
+Los sensores definitivos todavía se encuentran en selección, pero las
+funciones previstas permiten establecer los siguientes grupos:
 </p>
-
-<p>
-En el torso se ha dispuesto una abertura destinada a facilitar la
-implementación de un sistema de medición de presión arterial. La interfaz
-superior permite contemplar la interacción visual con el usuario. Los demás
-sistemas de percepción, interacción y medición continúan en proceso de
-investigación y definición.
-</p>
-
-<br>
 
 <table>
 
@@ -581,26 +676,326 @@ investigación y definición.
 
 <td align="center" width="50%">
 
-<h3>Percepción</h3>
+<b>Monitoreo clínico</b>
 
-<br>
+<br><br>
 
 <sub>
-Sensores de proximidad ubicados en las esquinas y sensor de temperatura
-ubicado en el pecho.
+Temperatura corporal, frecuencia cardíaca, saturación de oxígeno (SpO₂) y
+presión arterial.
 </sub>
 
 </td>
 
 <td align="center" width="50%">
 
-<h3>Interacción</h3>
+<b>Percepción del entorno</b>
+
+<br><br>
+
+<sub>
+Sensores de proximidad, detección de obstáculos, sensores ambientales y
+sistemas de localización.
+</sub>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center" width="50%">
+
+<b>Seguridad</b>
+
+<br><br>
+
+<sub>
+Detección de caídas, identificación de situaciones anormales y detección de
+proximidad al paciente.
+</sub>
+
+</td>
+
+<td align="center" width="50%">
+
+<b>Interacción</b>
+
+<br><br>
+
+<sub>
+Cámara, micrófono, pantalla y otros sistemas que permitan comunicación
+humano-robot.
+</sub>
+
+</td>
+
+</tr>
+
+</table>
 
 <br>
 
+<h3>Implementación actual</h3>
+
+<p>
+En el diseño actual se incorporaron sensores de proximidad distribuidos en
+las esquinas de la estructura, con el objetivo de detectar el acercamiento de
+personas. También se estableció una ubicación en la zona del pecho para el
+sensor destinado a la medición de temperatura corporal.
+</p>
+
+<p>
+En el torso se incorporó una abertura destinada a la futura integración del
+sistema de medición de presión arterial. Esta disposición busca facilitar el
+acceso del usuario al sistema de medición y mantener los elementos de
+interacción concentrados en una zona accesible.
+</p>
+
+<p>
+Las demás mediciones clínicas, incluyendo frecuencia cardíaca, SpO₂,
+detección de caídas y otras funciones de monitoreo, permanecen como sistemas
+en investigación y desarrollo. El mismo criterio aplica para los sistemas de
+interacción avanzada, navegación y detección de estados de malestar.
+</p>
+
+<h3>Interacción humano-robot</h3>
+
+<p>
+Entre las funciones planteadas se encuentran la conversación con el paciente,
+comunicación en diferentes idiomas, videollamada, generación de reportes,
+pantalla de interacción y comunicación con un centro médico en situaciones
+que requieran asistencia.
+</p>
+
+<p>
+El diseño también considera una interacción natural basada en movimientos
+suaves, comunicación clara y proximidad adecuada al paciente. El robot debe
+asistir y no reemplazar al personal de salud.
+</p>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+<br>
+
+<table>
+
+<tr>
+
+<td colspan="2" align="center">
+
+<h2>08 · Sistemas y Funciones Previstas</h2>
+
+<br>
+
+<table>
+
+<tr>
+
+<td align="center" width="33%">
+
+<b>Módulo clínico</b>
+
+<br><br>
+
 <sub>
-Interfaz superior y espacio destinado al sistema de medición de presión
-arterial.
+Temperatura, frecuencia cardíaca, SpO₂, presión arterial, evaluación básica
+del estado de conciencia, identificación de signos de malestar y monitoreo.
+</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+<b>Módulo de emergencia</b>
+
+<br><br>
+
+<sub>
+Alarmas, detección de situaciones críticas, protocolos de emergencia,
+localización de personas afectadas y apoyo hasta la llegada del personal de
+salud.
+</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+<b>Módulo de navegación</b>
+
+<br><br>
+
+<sub>
+Evitación de obstáculos, sensores de entorno, localización y desplazamiento
+autónomo.
+</sub>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center" width="33%">
+
+<b>Módulo de brazos</b>
+
+<br><br>
+
+<sub>
+Manipulación de objetos, levantamiento de pequeños objetos, entrega de
+medicamentos y tareas específicas de asistencia.
+</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+<b>Módulo de IA</b>
+
+<br><br>
+
+<sub>
+Conversación, identificación de situaciones de malestar, generación de
+reportes y apoyo en la toma de decisiones según protocolos definidos.
+</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+<b>Módulo de sensores</b>
+
+<br><br>
+
+<sub>
+Percepción del paciente y del entorno mediante sensores fisiológicos,
+ambientales y de proximidad.
+</sub>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+
+<p>
+La propuesta también contempla funciones futuras como un dispensador
+automático de medicamentos autorizados, comunicación con centros médicos,
+uso guiado de dispositivos complementarios ante emergencias y protocolos
+específicos dependiendo de la situación detectada.
+</p>
+
+</td>
+
+</tr>
+
+</table>
+
+<br>
+<br>
+
+<table>
+
+<tr>
+
+<td colspan="2" align="center">
+
+<h2>09 · Criterios de Seguridad y Comportamiento</h2>
+
+<br>
+
+<p>
+Debido al enfoque asistencial del proyecto, el comportamiento del robot debe
+priorizar la seguridad del paciente y la estabilidad de la plataforma.
+</p>
+
+<table>
+
+<tr>
+
+<td align="center" width="33%">
+
+<b>Seguridad primero</b>
+
+<br><br>
+
+<sub>
+El robot no debe poner en riesgo al paciente durante sus movimientos o tareas.
+</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+<b>Asistencia</b>
+
+<br><br>
+
+<sub>
+El robot funciona como sistema de apoyo y no como sustituto del personal de
+salud.
+</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+<b>Redundancia</b>
+
+<br><br>
+
+<sub>
+Si un sensor falla, otro sistema debe poder contribuir a detectar una
+situación de emergencia.
+</sub>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center" width="33%">
+
+<b>Estabilidad</b>
+
+<br><br>
+
+<sub>
+La plataforma debe conservar el equilibrio durante desplazamientos,
+elevaciones y tareas.
+</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+<b>Movimientos suaves</b>
+
+<br><br>
+
+<sub>
+Se deben evitar movimientos bruscos durante la interacción.
+</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+<b>Interacción natural</b>
+
+<br><br>
+
+<sub>
+Hablar de forma clara, mirar al paciente y esperar sus respuestas.
 </sub>
 
 </td>
@@ -624,11 +1019,11 @@ arterial.
 
 <td colspan="2" align="center">
 
-<h2>08 · Estado Actual del Diseño</h2>
+<h2>10 · Estado Actual del Diseño</h2>
 
 <br>
 
-<img src="https://raw.githubusercontent.com/danielab-cyber/Semillero-Tesla/main/image.png" width="80%">
+<img src="https://raw.githubusercontent.com/danielab-cyber/Semillero-Tesla/main/image.png" width="75%">
 
 <br><br>
 
@@ -641,9 +1036,10 @@ arterial.
 <h3>✓ Definido</h3>
 
 <sub>
-Base móvil, estructura general, mecanismo de elevación vertical del torso,
-sensor de temperatura en el pecho, sensores de proximidad en las esquinas y
-abertura destinada a la medición de presión arterial.
+Concepto general del robot, base móvil, regulación vertical del torso,
+rango de altura de referencia entre 116 cm y 170 cm, ubicación del sensor de
+temperatura, sensores de proximidad en las esquinas, abertura para medición
+de presión arterial y distribución general de la plataforma.
 </sub>
 
 </td>
@@ -653,8 +1049,9 @@ abertura destinada a la medición de presión arterial.
 <h3>◐ En desarrollo</h3>
 
 <sub>
-Integración de los sistemas de percepción, interacción y medición, así como
-la definición de los mecanismos que acompañarán al robot.
+Integración de sensores clínicos, navegación, interacción, sistemas de
+emergencia, análisis de estabilidad, selección de motores y definición de
+los sistemas que compondrán cada módulo.
 </sub>
 
 </td>
@@ -664,9 +1061,10 @@ la definición de los mecanismos que acompañarán al robot.
 <h3>○ Pendiente</h3>
 
 <sub>
-Diseño definitivo de los brazos, elementos terminales como manos,
-implementación del sistema DA y definición de los sistemas que aún no han
-sido seleccionados.
+Diseño definitivo de los brazos, selección de manos o elementos terminales,
+carga útil, inclinación máxima del torso, alcance de los brazos, centro de
+gravedad, implementación del DEA y demás sistemas cuya integración todavía
+no ha sido definida.
 </sub>
 
 </td>
@@ -677,11 +1075,23 @@ sido seleccionados.
 
 <br>
 
+<h3>Ruta de desarrollo</h3>
+
 <p>
-El diseño se encuentra en una etapa de desarrollo en la que la estructura
-principal ya permite establecer la distribución general del robot. Las
-funciones y sistemas que aún no han sido definidos determinarán las
-modificaciones necesarias en los mecanismos de interacción y en los brazos.
+La siguiente etapa del proyecto parte de la definición de requisitos y
+continúa con el modelo geométrico, la cinemática del robot, el análisis del
+centro de gravedad y la estabilidad, el cálculo de fuerzas y torques, la
+selección de motores, la validación, la implementación de criterios de
+seguridad y finalmente la optimización del sistema.
+</p>
+
+<p>
+El diseño actual representa una evolución de la propuesta inicial. La
+configuración de tres movimientos del torso fue descartada y se adoptó una
+solución de elevación vertical, buscando una interacción más directa con el
+paciente, una arquitectura más sencilla y mejores condiciones para controlar
+la estabilidad del robot. Los demás sistemas se irán definiendo de acuerdo
+con las funciones que finalmente se prioricen para la plataforma asistencial.
 </p>
 
 </td>
@@ -690,11 +1100,5 @@ modificaciones necesarias en los mecanismos de interacción y en los brazos.
 
 </table>
 
-
-
-
-<br>
-<br>
-<hr>
 
 
